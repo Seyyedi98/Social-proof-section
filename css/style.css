@@ -1,0 +1,300 @@
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: hsl(300, 24%, 96%);
+  padding: 1.2rem;
+}
+
+main {
+  max-width: 90rem;
+  margin: 2rem auto;
+}
+
+h1 {
+  font-size: 3rem;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* HEADING SECTION */
+
+.section-heading {
+  margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading-text {
+  font-weight: 500;
+  color: hsl(303, 10%, 53%);
+}
+
+.section-rating {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.rating-container {
+  background-color: hsla(302, 10%, 53%, 0.2);
+  border-radius: 10px;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.rating-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+
+/* TESTIMONIALS SECTION */
+
+.section-testimonials {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.testimonial {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.user-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name,
+.user-verification {
+  display: block;
+  margin: -3px;
+}
+
+.user-name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.user-verification {
+  color: hsla(333, 80%, 67%, 0.6);
+  font-weight: 400;
+}
+
+.user-img {
+  width: 56px;
+  border-radius: 100px;
+}
+
+.testimonial-text {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+/* ///////////////////////////// */
+/* ////////   QUERIES   //////// */
+/* ///////////////////////////// */
+
+/* above 768px */
+@media (min-width: 47em) {
+  body {
+    padding: 1.2rem;
+  }
+  h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 4rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .rating-container {
+    gap: 1.4rem;
+    padding: 1.2rem;
+  }
+
+  .section-rating {
+    gap: 1.6rem;
+  }
+
+  .star-img {
+    width: 32px;
+  }
+
+  .rating-text {
+    font-size: 1.5rem;
+  }
+
+  .section-testimonials {
+    gap: 2rem;
+  }
+
+  .testimonial {
+    padding: 3rem;
+  }
+
+  .user-profile {
+    gap: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .user-name .user-verification {
+    font-size: 2rem;
+    margin: 10px;
+  }
+
+  .user-img {
+    width: 72px;
+  }
+
+  .testimonial-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+}
+
+/* above 768px */
+@media (min-width: 64em) {
+  body {
+    padding: 3rem;
+  }
+
+  .heading {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+  }
+
+  .section-heading {
+    margin-top: 2rem;
+  }
+
+  h1 {
+    line-height: 0.9;
+    font-size: 4rem;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .section-rating {
+    margin-top: 4rem;
+    gap: 2rem;
+  }
+
+  .star-img {
+    width: 20px;
+  }
+
+  .rating-text {
+    font-size: 1.2rem;
+  }
+
+  .rating-container {
+    margin-right: -2rem;
+    width: 460px;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 1.2rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .rating-container:nth-child(1) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .rating-container:nth-child(2) {
+    /* margin-right: ; */
+    margin-left: 60px;
+  }
+
+  .rating-container:nth-child(3) {
+    /* margin-right: ; */
+    margin-left: 120px;
+  }
+
+  .section-testimonials {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .testimonial {
+    padding: 2rem;
+  }
+
+  .user-profile {
+    gap: 2rem;
+  }
+
+  .user-name .user-verification {
+    font-size: 2rem;
+  }
+
+  .user-img {
+    width: 64px;
+  }
+
+  .testimonial-text {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  .testimonial:nth-child(1) {
+    margin-top: 0;
+  }
+  .testimonial:nth-child(2) {
+    margin-top: 30px;
+  }
+  .testimonial:nth-child(3) {
+    margin-top: 60px;
+  }
+}
+
+/* above 1306px */
+@media (min-width: 81.625em) {
+  .section-heading {
+    width: 80%;
+  }
+
+  .rating-container {
+    margin-right: -2rem;
+    width: 600px;
+    padding: 1.2rem 2rem;
+  }
+}
